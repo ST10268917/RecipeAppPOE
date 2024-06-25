@@ -1,0 +1,32 @@
+﻿<Window x:Class="RecipeApp.IngredientDetails"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RecipeApp"
+        mc:Ignorable="d"
+        Title="IngredientDetails" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="titleLabel" Content="Ingredient Details" HorizontalAlignment="Left" Margin="66,24,0,0" VerticalAlignment="Top" FontSize="22" FontWeight="Bold" FontFamily="Segoe UI Black"/>
+        <TextBox x:Name="unitOfMeasurementTB" HorizontalAlignment="Left" Margin="200,195,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Unit of measurement:" HorizontalAlignment="Left" Margin="66,191,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="caloriesTB" HorizontalAlignment="Left" Margin="140,240,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Calories:" HorizontalAlignment="Left" Margin="66,236,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="nameTB" HorizontalAlignment="Left" Margin="140,99,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Name:" HorizontalAlignment="Left" Margin="66,91,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="quantityTB" HorizontalAlignment="Left" Margin="140,144,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Quantity:" HorizontalAlignment="Left" Margin="66,140,0,0" VerticalAlignment="Top"/>
+        <Label Content="Food Group:" HorizontalAlignment="Left" Margin="66,283,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="foodGroupCB" HorizontalAlignment="Left" Margin="168,283,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Content="Starchy Foods"/>
+            <ComboBoxItem Content="Vegetables and fruits"/>
+            <ComboBoxItem Content="Dry beans, peas, lentils and soya"/>
+            <ComboBoxItem Content="Chicken, fish, meat and eggs"/>
+            <ComboBoxItem Content="Milk and dairy products"/>
+            <ComboBoxItem Content="Fats and oil"/>
+            <ComboBoxItem Content="Water"/>
+        </ComboBox>
+        <TextBlock HorizontalAlignment="Left" Height="72" Margin="70,328,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="444"/>
+
+    </Grid>
+</Window>
