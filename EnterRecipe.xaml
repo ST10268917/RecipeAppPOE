@@ -1,0 +1,20 @@
+﻿<Window x:Class="RecipeApp.EnterRecipe"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RecipeApp"
+        mc:Ignorable="d"
+        Title="EnterRecipe" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="titleLabel" Content="Enter a Recipe" HorizontalAlignment="Left" Margin="93,22,0,0" VerticalAlignment="Top" FontSize="22" FontWeight="Bold" FontFamily="Segoe UI Black"/>
+        <TextBox x:Name="nameTB" HorizontalAlignment="Left" Margin="164,96,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Name:" HorizontalAlignment="Left" Margin="90,92,0,0" VerticalAlignment="Top"/>
+        <Label Content="Number of ingredients:" HorizontalAlignment="Left" Margin="93,161,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="numIngredientsTB" HorizontalAlignment="Left" Margin="250,165,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Number of steps:" HorizontalAlignment="Left" Margin="93,226,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="numStepsTB" HorizontalAlignment="Left" Margin="250,230,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="submitButton" Content="Submit" HorizontalAlignment="Left" Margin="104,302,0,0" VerticalAlignment="Top" Width="55" Click="submitButton_Click"/>
+
+    </Grid>
+</Window>

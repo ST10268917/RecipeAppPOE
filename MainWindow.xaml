@@ -1,0 +1,26 @@
+﻿<Window x:Class="RecipeApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RecipeApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="https://t4.ftcdn.net/jpg/08/45/28/33/360_F_845283329_IEUG9XjcfK1f6cN4DPNaQDGUoQRR4b3h.jpg"></ImageBrush>
+        </Grid.Background>
+        <Label x:Name="titleLabel" Content="Welcome to the Recipe App" HorizontalAlignment="Left" Margin="41,80,0,0" VerticalAlignment="Top" FontSize="22" FontWeight="Bold" FontFamily="Segoe UI Black"/>
+        <Button x:Name="enterRecipeButton" Content="Enter a recipe" HorizontalAlignment="Left" Margin="50,156,0,0" VerticalAlignment="Top" Width="99" Background="#FFFF4000" Click="enterRecipeButton_Click"/>
+        <Button x:Name="displayRecipeButton" Content="Display Recipe" HorizontalAlignment="Left" Margin="100,191,0,0" VerticalAlignment="Top" Background="#FFDFD541" Click="displayRecipeButton_Click"/>
+        <Button x:Name="scaleRecipeButton" Content="Scale Recipe" HorizontalAlignment="Left" Margin="140,228,0,0" VerticalAlignment="Top" Background="#FF1AA461"/>
+        <Button x:Name="resetButton" Content="Reset Quantities" HorizontalAlignment="Left" Margin="175,264,0,0" VerticalAlignment="Top" Background="#FFFFA900"/>
+        <Button x:Name="clearButton" Content="Clear Recipe" HorizontalAlignment="Left" Margin="244,297,0,0" VerticalAlignment="Top" Background="#FF709EF6" Click="clearButton_Click"/>
+        <Button x:Name="exitButton" Content="Exit Application" HorizontalAlignment="Left" Margin="290,331,0,0" VerticalAlignment="Top" Background="#FFFF0086" Click="exitButton_Click">
+            <Button.Style>
+                <Style/>
+            </Button.Style>
+        </Button>
+
+    </Grid>
+</Window>
