@@ -52,5 +52,11 @@ namespace RecipeApp
             Scale scaleRecipe = new Scale();
             scaleRecipe.Show();
         }
+
+        private void resetButton_Click(object sender, RoutedEventArgs e)
+        {
+            resetRecipe reset = new resetRecipe();
+            reset.Show();
+        }
     }
 }

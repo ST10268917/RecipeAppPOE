@@ -8,7 +8,7 @@
         Title="ClearRecipe" Height="450" Width="800">
     <Grid>
         <Label x:Name="titleLabel" Content="Clear Recipe" HorizontalAlignment="Left" Margin="66,24,0,0" VerticalAlignment="Top" FontSize="22" FontWeight="Bold" FontFamily="Segoe UI Black"/>
-        <ComboBox x:Name="recipesCB" HorizontalAlignment="Left" Margin="79,109,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="recipesCB_SelectionChanged"/>
+        <ComboBox x:Name="recipesCB" HorizontalAlignment="Left" Margin="79,109,0,0" VerticalAlignment="Top" Width="581" SelectionChanged="recipesCB_SelectionChanged"/>
         <Label Content="Which recipe would you like to clear?" HorizontalAlignment="Left" Margin="71,83,0,0" VerticalAlignment="Top"/>
         <Button x:Name="confirmButton" Content="Confirm" HorizontalAlignment="Left" Margin="80,184,0,0" VerticalAlignment="Top" Click="confirmButton_Click"/>
     </Grid>

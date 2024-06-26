@@ -35,6 +35,15 @@ namespace RecipeApp
             foodGroupCB.Items.Add("Milk and dairy products");
             foodGroupCB.Items.Add("Fats and oil");
             foodGroupCB.Items.Add("Water");
+
+            unitsCB.Items.Add("Cup");
+            unitsCB.Items.Add("Tablespoon");
+            unitsCB.Items.Add("Teaspoon");
+            unitsCB.Items.Add("Whole");
+            unitsCB.Items.Add("Handfull");
+            unitsCB.Items.Add("Cups");
+            unitsCB.Items.Add("Tablespoons");
+            unitsCB.Items.Add("Teaspoons");
         }
 
         private void submitButton_Click(object sender, RoutedEventArgs e)
@@ -42,9 +51,8 @@ namespace RecipeApp
             // Check if any input field is empty or if the ComboBox has no selected item
             if (string.IsNullOrWhiteSpace(nameTB.Text) ||
                 string.IsNullOrWhiteSpace(quantityTB.Text) ||
-                string.IsNullOrWhiteSpace(unitOfMeasurementTB.Text) ||
                 string.IsNullOrWhiteSpace(caloriesTB.Text) ||
-                foodGroupCB.SelectedItem == null)
+                foodGroupCB.SelectedItem == null || unitsCB.SelectedItem == null)
             {
                 MessageBox.Show("Please fill all fields and select a food group.");
                 return; // Return early to prevent further execution
@@ -62,14 +70,17 @@ namespace RecipeApp
 
             // Assuming all validations pass, proceed to update the recipe
             Recipe recipe = RecipeManager.allRecipes[recipeName];
+            recipe.CalorieCountExceeded += Recipe_CalorieCountExceeded;
+
             recipe.Ingredients.Add(nameTB.Text);
             recipe.IngredientQuantities.Add(quantityChecked.Value);
             recipe.IngredientQuantitiesScaled.Add(quantityChecked.Value);
-            recipe.IngredientUnitsOfMeasurement.Add(unitOfMeasurementTB.Text);
-            recipe.recipeUnitsToDisplay.Add(unitOfMeasurementTB.Text);
+            recipe.IngredientUnitsOfMeasurement.Add(unitsCB.SelectedItem.ToString());
+            recipe.recipeUnitsToDisplay.Add(unitsCB.SelectedItem.ToString());
             recipe.IngredientCalories.Add(caloriesChecked.Value);
             recipe.IngredientCaloriesScaled.Add(caloriesChecked.Value);
             recipe.totalCalories += caloriesChecked;
+            recipe.CheckCalorieCount();
             recipe.FoodGroups.Add(foodGroupCB.SelectedItem.ToString());
 
             IngredientSubmitted?.Invoke();
@@ -103,6 +114,12 @@ namespace RecipeApp
         {
             foodGroupDescr.Text = determineFoodGroupMessage((string)foodGroupCB.SelectedItem);
         }
+
+        private void Recipe_CalorieCountExceeded(double totalCalories)
+        {
+            calorieAlertTB.Text = $"The total calories of {totalCalories} calories exceeds 300 calories";
+        }
+
     }
 
     

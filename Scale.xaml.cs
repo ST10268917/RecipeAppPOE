@@ -120,6 +120,7 @@ namespace RecipeApp
                     {
                         recipe.IngredientCaloriesScaled[i] = recipe.IngredientCaloriesScaled[i] * 0.5;
                     }
+                    recipe.totalCalories *= 0.5;
                     MessageBox.Show("The recipe has been halved");
                     break;
                 case "double":
@@ -128,6 +129,7 @@ namespace RecipeApp
                     {
                         recipe.IngredientCaloriesScaled[i] = recipe.IngredientCaloriesScaled[i] * 2;
                     }
+                    recipe.totalCalories *= 2;
                     MessageBox.Show("The recipe has been doubled.");
                     break;
                 case "triple":
@@ -136,6 +138,7 @@ namespace RecipeApp
                     {
                         recipe.IngredientCaloriesScaled[i] = recipe.IngredientCaloriesScaled[i] * 3;
                     }
+                    recipe.totalCalories *= 3;
                     MessageBox.Show("The recipe has been tripled.");
                     break;
                 //If the user enters an invalid scale factor, they will be informed

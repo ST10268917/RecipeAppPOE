@@ -8,7 +8,7 @@
         Title="Scale" Height="586" Width="800">
     <Grid Margin="0,0,0,31">
         <Label x:Name="titleLabel" Content="Scale Recipe" HorizontalAlignment="Left" Margin="66,24,0,0" VerticalAlignment="Top" FontSize="22" FontWeight="Bold" FontFamily="Segoe UI Black"/>
-        <ComboBox x:Name="recipesCB" HorizontalAlignment="Left" Margin="79,109,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="recipesCB_SelectionChanged"/>
+        <ComboBox x:Name="recipesCB" HorizontalAlignment="Left" Margin="79,109,0,0" VerticalAlignment="Top" Width="493" SelectionChanged="recipesCB_SelectionChanged"/>
         <Label Content="Which recipe would you like to scale?" HorizontalAlignment="Left" Margin="71,83,0,0" VerticalAlignment="Top"/>
         <TextBlock x:Name="displayTB" HorizontalAlignment="Left" Margin="83,215,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="281" Width="486" Background="{DynamicResource {x:Static SystemColors.ScrollBarBrushKey}}"/>
         <Label Content="What is the scale factor?" HorizontalAlignment="Left" Margin="74,136,0,0" VerticalAlignment="Top"/>

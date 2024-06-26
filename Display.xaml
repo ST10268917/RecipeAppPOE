@@ -8,7 +8,7 @@
         Title="Display" Height="496" Width="800">
     <Grid>
         <Label x:Name="titleLabel" Content="Display Recipe" HorizontalAlignment="Left" Margin="66,24,0,0" VerticalAlignment="Top" FontSize="22" FontWeight="Bold" FontFamily="Segoe UI Black"/>
-        <ComboBox x:Name="recipesCB" HorizontalAlignment="Left" Margin="79,109,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="recipesCB_SelectionChanged"/>
+        <ComboBox x:Name="recipesCB" HorizontalAlignment="Left" Margin="79,109,0,0" VerticalAlignment="Top" Width="448" SelectionChanged="recipesCB_SelectionChanged"/>
         <Label Content="Which recipe would you like to display?" HorizontalAlignment="Left" Margin="71,83,0,0" VerticalAlignment="Top"/>
         <TextBlock x:Name="displayTB" HorizontalAlignment="Left" Margin="87,166,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="268" Width="439" Background="{DynamicResource {x:Static SystemColors.ScrollBarBrushKey}}"/>
 

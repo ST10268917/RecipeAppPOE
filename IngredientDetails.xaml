@@ -1,6 +1,4 @@
-﻿
-    
-    <Window x:Class="RecipeApp.IngredientDetails"
+﻿<Window x:Class="RecipeApp.IngredientDetails"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -14,7 +12,6 @@
             <RowDefinition Height="61*"/>
         </Grid.RowDefinitions>
         <Label x:Name="titleLabel" Content="Ingredient Details" HorizontalAlignment="Left" Margin="66,24,0,0" VerticalAlignment="Top" FontSize="22" FontWeight="Bold" FontFamily="Segoe UI Black"/>
-        <TextBox x:Name="unitOfMeasurementTB" HorizontalAlignment="Left" Margin="200,195,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <Label Content="Unit of measurement:" HorizontalAlignment="Left" Margin="66,191,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="caloriesTB" HorizontalAlignment="Left" Margin="140,240,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <Label Content="Calories:" HorizontalAlignment="Left" Margin="66,236,0,0" VerticalAlignment="Top"/>
@@ -27,6 +24,8 @@
         </ComboBox>
         <TextBlock x:Name="foodGroupDescr" HorizontalAlignment="Left" Height="37" Margin="70,328,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="444"/>
         <Button x:Name="submitButton" Content="Submit" HorizontalAlignment="Left" Margin="74,387,0,0" VerticalAlignment="Top" Width="55" Click="submitButton_Click" Grid.RowSpan="2"/>
+        <TextBlock x:Name="calorieAlertTB" HorizontalAlignment="Left" Height="19" Margin="296,239,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="264" IsEnabled="False" Foreground="#FFED1212"/>
+        <ComboBox x:Name="unitsCB" HorizontalAlignment="Left" Margin="202,196,0,0" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>
