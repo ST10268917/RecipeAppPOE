@@ -13,7 +13,7 @@
         <Label x:Name="titleLabel" Content="Welcome to the Recipe App" HorizontalAlignment="Left" Margin="41,80,0,0" VerticalAlignment="Top" FontSize="22" FontWeight="Bold" FontFamily="Segoe UI Black"/>
         <Button x:Name="enterRecipeButton" Content="Enter a recipe" HorizontalAlignment="Left" Margin="50,156,0,0" VerticalAlignment="Top" Width="99" Background="#FFFF4000" Click="enterRecipeButton_Click"/>
         <Button x:Name="displayRecipeButton" Content="Display Recipe" HorizontalAlignment="Left" Margin="100,191,0,0" VerticalAlignment="Top" Background="#FFDFD541" Click="displayRecipeButton_Click"/>
-        <Button x:Name="scaleRecipeButton" Content="Scale Recipe" HorizontalAlignment="Left" Margin="140,228,0,0" VerticalAlignment="Top" Background="#FF1AA461"/>
+        <Button x:Name="scaleRecipeButton" Content="Scale Recipe" HorizontalAlignment="Left" Margin="140,228,0,0" VerticalAlignment="Top" Background="#FF1AA461" Click="scaleRecipeButton_Click"/>
         <Button x:Name="resetButton" Content="Reset Quantities" HorizontalAlignment="Left" Margin="175,264,0,0" VerticalAlignment="Top" Background="#FFFFA900"/>
         <Button x:Name="clearButton" Content="Clear Recipe" HorizontalAlignment="Left" Margin="244,297,0,0" VerticalAlignment="Top" Background="#FF709EF6" Click="clearButton_Click"/>
         <Button x:Name="exitButton" Content="Exit Application" HorizontalAlignment="Left" Margin="290,331,0,0" VerticalAlignment="Top" Background="#FFFF0086" Click="exitButton_Click">

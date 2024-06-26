@@ -34,28 +34,12 @@ namespace RecipeApp
         private void recipesCB_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             string recipeToDisplay = recipesCB.SelectedItem.ToString();
-            displayTB.Text = displayRecipe(RecipeManager.allRecipes[recipeToDisplay]).ToString();
+            displayTB.Text = Recipe.displayRecipe(RecipeManager.allRecipes[recipeToDisplay]).ToString();
         }
 
-        public StringBuilder displayRecipe(Recipe recipe)
-        {
-            StringBuilder sb = new StringBuilder();
-            sb.AppendLine("FULL RECIPE");
-            sb.AppendLine("-------------------------------------------------------------");
-            sb.AppendLine("Number of ingredients required: " + recipe.Num_ingredients);
-            sb.AppendLine("Number of steps: " + recipe.Num_steps);
-            sb.AppendLine("INGREDIENTS:");
-            for (int i = 0; i < recipe.Num_ingredients; i++)
-            {
-             //   sb.AppendLine("- " + recipe.IngredientQuantitiesScaled[i] + " " + recipe.recipeUnitsToDisplay[i] + " " + recipe.Ingredients[i] + " (" + recipe.FoodGroups[i] + ")  -  " + recipe.IngredientCalories[i] + " calories");
-            }
-            sb.AppendLine("STEPS:");
-            for (int i = 0; i < recipe.Num_steps; i++)
-            {
-                sb.AppendLine((i + 1) + ". " + recipe.Steps[i]);
-            }
-            sb.AppendLine("\nTotal calories: " + recipe.totalCalories);
-            return sb;
-        }
+        
+
+        
+
     }
 }

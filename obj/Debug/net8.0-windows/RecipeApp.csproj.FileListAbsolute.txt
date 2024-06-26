@@ -53,3 +53,5 @@ C:\Users\Hamza\source\repos\RecipeAppPOE\RecipeApp\obj\Debug\net8.0-windows\Disp
 C:\Users\Hamza\source\repos\RecipeAppPOE\RecipeApp\obj\Debug\net8.0-windows\Display.baml
 C:\Users\Hamza\source\repos\RecipeAppPOE\RecipeApp\obj\Debug\net8.0-windows\ClearRecipe.g.cs
 C:\Users\Hamza\source\repos\RecipeAppPOE\RecipeApp\obj\Debug\net8.0-windows\ClearRecipe.baml
+C:\Users\Hamza\source\repos\RecipeAppPOE\RecipeApp\obj\Debug\net8.0-windows\Scale.g.cs
+C:\Users\Hamza\source\repos\RecipeAppPOE\RecipeApp\obj\Debug\net8.0-windows\Scale.baml

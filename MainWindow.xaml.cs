@@ -46,5 +46,11 @@ namespace RecipeApp
             ClearRecipe clearRecipe = new ClearRecipe();
             clearRecipe.Show();
         }
+
+        private void scaleRecipeButton_Click(object sender, RoutedEventArgs e)
+        {
+            Scale scaleRecipe = new Scale();
+            scaleRecipe.Show();
+        }
     }
 }

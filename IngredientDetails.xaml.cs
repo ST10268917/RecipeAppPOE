@@ -64,8 +64,11 @@ namespace RecipeApp
             Recipe recipe = RecipeManager.allRecipes[recipeName];
             recipe.Ingredients.Add(nameTB.Text);
             recipe.IngredientQuantities.Add(quantityChecked.Value);
+            recipe.IngredientQuantitiesScaled.Add(quantityChecked.Value);
             recipe.IngredientUnitsOfMeasurement.Add(unitOfMeasurementTB.Text);
+            recipe.recipeUnitsToDisplay.Add(unitOfMeasurementTB.Text);
             recipe.IngredientCalories.Add(caloriesChecked.Value);
+            recipe.IngredientCaloriesScaled.Add(caloriesChecked.Value);
             recipe.totalCalories += caloriesChecked;
             recipe.FoodGroups.Add(foodGroupCB.SelectedItem.ToString());
 
