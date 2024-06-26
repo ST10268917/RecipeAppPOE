@@ -19,7 +19,10 @@ namespace RecipeApp
     /// </summary>
     public partial class EnterRecipe : Window
     {
-        
+        private Recipe recipe;
+        private int currentIngredientIndex = 0;
+        private int currentStepIndex = -1;
+
         public EnterRecipe()
         {
             InitializeComponent();
@@ -35,22 +38,61 @@ namespace RecipeApp
                 int? numStepsChecked = InputValidation.checkIntInput(numStepsTB.Text);
                 if (numIngChecked != null && numStepsChecked != null)
                 {
-                    Recipe recipe = new Recipe();
+                    recipe = new Recipe();
                     recipe.Name = nameTB.Text;
                     recipe.Num_ingredients = numIngChecked.Value;
                     recipe.Num_steps = numStepsChecked.Value;
                     RecipeManager.allRecipes.Add(recipe.Name, recipe);
-                    for (int i = 0; i < recipe.Num_ingredients; i++)
-                    {
-                        this.Close();
-                        IngredientDetails details = new IngredientDetails(i);
-                        details.Show();
-                    }
+                    // Close the current form and show the first IngredientDetails form
+                    this.Hide();
+                    ShowIngredientDetailsForm();
                 }
             else
                 {
                     MessageBox.Show("Please enter valid inputs");
                 }                  
+            }
+        }
+
+        private void ShowIngredientDetailsForm()
+        {
+            if (currentIngredientIndex < recipe.Num_ingredients)
+            {
+                IngredientDetails details = new IngredientDetails(recipe.Name, currentIngredientIndex);
+                details.IngredientSubmitted += Details_IngredientSubmitted;  // Subscribe to the event
+                details.Show();
+            }
+            else
+            {
+                MessageBox.Show("All ingredients entered");
+                Details_StepSubmitted();
+            }
+        }
+
+        private void Details_IngredientSubmitted()
+        {
+            currentIngredientIndex++; // Increment to load the next ingredient
+            ShowIngredientDetailsForm(); // Show next ingredient form
+        }
+
+        private void Details_StepSubmitted()
+        {
+            currentStepIndex++;
+            ShowStepForm();
+        }
+
+        private void ShowStepForm()
+        {
+            if (currentStepIndex < recipe.Num_steps)
+            {
+                StepsDetails stepsDetails = new StepsDetails(recipe.Name, currentStepIndex);
+                stepsDetails.StepSubmitted += Details_StepSubmitted;  // Subscribe to the event
+                stepsDetails.Show();
+            }
+            else
+            {
+                MessageBox.Show("All steps entered");
+                MessageBox.Show("The recipe has successfully been saved");
             }
         }
     }

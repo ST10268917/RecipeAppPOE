@@ -25,6 +25,7 @@ namespace RecipeApp
         public List<double> IngredientQuantities = new List<double>();
         public List<double> IngredientQuantitiesScaled = new List<double>();
         public List<string> IngredientUnitsOfMeasurement = new List<string>();
+        public List<double> IngredientCalories = new List<double>();
         public List<string> recipeUnitsToDisplay = new List<string>();
         public List<string> Steps = new List<string>();
         public List<string> FoodGroups = new List<string>();

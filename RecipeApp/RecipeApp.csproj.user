@@ -13,6 +13,9 @@
     <Compile Update="IngredientDetails.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="StepsDetails.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="EnterRecipe.xaml">
@@ -22,6 +25,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StepsDetails.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
