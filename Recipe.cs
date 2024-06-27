@@ -48,10 +48,10 @@ namespace RecipeApp
         }
 
         public static Dictionary<string, Tuple<double, string>> conversionsDict = new Dictionary<string, Tuple<double, string>>() {
-                {"tablespoon", Tuple.Create(16.0, "cup") },
-                {"tablespoons", Tuple.Create(16.0, "cup") },
-                {"teaspoon", Tuple.Create(48.0, "cup") },
-                {"teaspoons", Tuple.Create(48.0, "cup") },
+                {"Tablespoon", Tuple.Create(16.0, "Cup") },
+                {"Tablespoons", Tuple.Create(16.0, "Cup") },
+                {"Teaspoon", Tuple.Create(48.0, "Cup") },
+                {"Teaspoons", Tuple.Create(48.0, "Cup") },
         };
 
         public static StringBuilder displayRecipe(Recipe recipe)

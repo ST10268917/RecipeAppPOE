@@ -39,6 +39,7 @@ namespace RecipeApp
                 Recipe recipeToReset = RecipeManager.allRecipes[recipesCB.SelectedItem.ToString()];
                 for (int i = 0; i < recipeToReset.Ingredients.Count; i++)
                 {
+                    //Reset the quantity and calorie values to original values
                     recipeToReset.IngredientQuantitiesScaled[i] = recipeToReset.IngredientQuantities[i];
                     recipeToReset.IngredientCaloriesScaled[i] = recipeToReset.IngredientCalories[i];
                 }
