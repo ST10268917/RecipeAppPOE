@@ -9,7 +9,7 @@ Prerequisites
 --------------------------------------------------------
 Before you start, make sure you have the following installed on your computer:
 •	Visual Studio
-•	Git : https://github.com/VCDN-2024/prog6221-part-1-ST10268917.git 
+•	Git : https://github.com/ST10268917/RecipeAppPOE.git
 Installation
 1.	Clone the GitHub repository to your local machine using Git. Open your command-line terminal and run the following command:
 bashCopy code
@@ -36,7 +36,7 @@ Once the app has run, the main menu of the program will be displayed. The menu h
 1. Enter a recipe
 2. Display recipe
 3. Scale recipe
-4. Reset quanitities to original values
+4. Reset quantities to original values
 5. Clear recipe
 6. Exit application
 7. Search by ingredient
@@ -58,8 +58,7 @@ OPTION 1: ENTER A RECIPE
 Start by entering the name, the number of ingredients and the number of steps for the recipe. If invalid inputs are entered, you will get a pop-up message informing you.
 
 ![image](https://github.com/ST10268917/RecipeAppPOE/assets/128280096/3d620726-5cc0-4891-8d6f-351651a078c6)
-Thereafter enter the releavant details for each ingredient. The unit of measurements and food groups are displayed in combo boxes. When you pick a food group, 
-you get a corresponding description about that food group. 
+Thereafter enter the relevant details for each ingredient. The unit of measurements and food groups are displayed in combo boxes. When you pick a food group, you get a corresponding description about that food group. 
 
 ![image](https://github.com/ST10268917/RecipeAppPOE/assets/128280096/5a69cb98-70c9-48d0-8c4e-16fc06d10b69)
 Once all the ingredients have been entered, you will be informed with a message box. If the number of calories exceeds 300 calories, you will be alerted and informed.
@@ -73,8 +72,7 @@ OPTION 2: DISPLAY RECIPE
 ![image](https://github.com/ST10268917/RecipeAppPOE/assets/128280096/136149fa-b4da-49a0-afc3-ca2cbb38ee1e)
 ![image](https://github.com/ST10268917/RecipeAppPOE/assets/128280096/4c929b59-608c-45a7-bbf1-f10250d51367)
 
-Select the recipe you wish to display from the combo box drop-down list. The recipes are shown in alphabetical order with other important details. The full recipe is displayed in a user-friendly format 
-and you can tick off the steps as you complete them.
+Select the recipe you wish to display from the combo box drop-down list. The recipes are shown in alphabetical order with other important details. The full recipe is displayed in a user-friendly format and you can tick off the steps as you complete them.
 
 OPTION 3: SCALE RECIPE
 -------------------------------------------------
@@ -89,7 +87,7 @@ The example image below shows scaling a recipe by 'double':
 The example image below shows scaling a recipe by 'triple':
 ![image](https://github.com/ST10268917/RecipeAppPOE/assets/128280096/d70f0e63-0714-48e3-b5eb-0e699cf03aed)
 
-NOTE: Units of measurement are changed accordingly when scaling. In the example shown below, 8 tablespoons of milk when doubled, becomes 16 tablespoons of milk. The system does the conversion and changes this to 1 cup of milk beacuse 16 tablespoons = 1 cup. 
+NOTE: Units of measurement are changed accordingly when scaling. In the example shown below, 8 tablespoons of milk when doubled, becomes 16 tablespoons of milk. The system does the conversion and changes this to 1 cup of milk because 16 tablespoons = 1 cup. 
 ![image](https://github.com/ST10268917/RecipeAppPOE/assets/128280096/51fde7ed-95da-430a-b53a-b535e848eb0e)
 
 
@@ -104,8 +102,7 @@ OPTION 5: CLEAR RECIPE
 ![image](https://github.com/ST10268917/RecipeAppPOE/assets/128280096/caa8887f-753a-4bfb-a47a-34ca6dfc43d5)
 ![image](https://github.com/ST10268917/RecipeAppPOE/assets/128280096/d8f7a900-a70b-47af-9054-82f5ba055d9d)
 
-Select the recipe you want to clear and that recipe will be removed from the collection of recipes. After selecting the recipe to clear, you are asked to confirm whether
-you want to clear the recipe and the recipe is only cleared if you click on 'Yes'.
+Select the recipe you want to clear and that recipe will be removed from the collection of recipes. After selecting the recipe to clear, you are asked to confirm whether you want to clear the recipe and the recipe is only cleared if you click on 'Yes'.
 
 OPTION 6: EXIT APPLICATION
 -------------------------------------------------
@@ -127,7 +124,7 @@ OPTION 9: SEARCH BY MAXIMUM CALORIES
 ![image](https://github.com/ST10268917/RecipeAppPOE/assets/128280096/e0d41825-82df-4687-8a1d-917fbae14bd5)
 
 ![image](https://github.com/ST10268917/RecipeAppPOE/assets/128280096/a66f72fc-06c6-4cdb-b3cf-c4cb2f159a65)
-Enter a maximum number of caloies and the app will filter through all the recipes and display the names of the recipes that have calories less than or equal to that amount.
+Enter a maximum number of calories and the app will filter through all the recipes and display the names of the recipes that have calories less than or equal to that amount.
 
 Note: For all the search functionalities above, if a recipe with that criteria is not found, a pop-up will show to inform.
 
