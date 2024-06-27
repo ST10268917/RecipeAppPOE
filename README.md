@@ -109,12 +109,12 @@ you want to clear the recipe and the recipe is only cleared if you click on 'Yes
 
 OPTION 6: EXIT APPLICATION
 -------------------------------------------------
-![alt text](image-5.png)
 You can exit the app by clicking on this button.
 
 OPTION 7: SEARCH BY INGREDIENT
 -------------------------------------------------
 ![image](https://github.com/ST10268917/RecipeAppPOE/assets/128280096/71f60310-f078-46ce-9e16-36d4ce9d95c9)
+
 Enter the name of an ingredient and the app will filter through all the recipes and display the names of the recipes that have that ingredient.
 
 OPTION 8: SEARCH BY FOOD GROUP
@@ -133,9 +133,8 @@ Note: For all the search functionalities above, if a recipe with that criteria i
 
 LINK TO GITHUB REPOSITORY:
 -------------------------------------------------
-https://github.com/VCDN-2024/prog6221-part-1-ST10268917.git
+https://github.com/ST10268917/RecipeAppPOE.git; lg8
 
-Note: I used the same repository from part 1 and part 2 for my part 3 submission
 
 
 
