@@ -133,7 +133,7 @@ Note: For all the search functionalities above, if a recipe with that criteria i
 
 LINK TO GITHUB REPOSITORY:
 -------------------------------------------------
-https://github.com/ST10268917/RecipeAppPOE.git; lg8
+https://github.com/ST10268917/RecipeAppPOE.git
 
 
 
