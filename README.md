@@ -55,7 +55,7 @@ OPTION 1: ENTER A RECIPE
 
 ![image](https://github.com/ST10268917/RecipeAppPOE/assets/128280096/ac56c424-111a-4b60-beec-9c044eae44d3)
 
-Start by entering a the name, the number of ingredients and the number of steps for the recipe. If invalid inputs are entered, you will get a pop-up message informing you.
+Start by entering the name, the number of ingredients and the number of steps for the recipe. If invalid inputs are entered, you will get a pop-up message informing you.
 
 ![image](https://github.com/ST10268917/RecipeAppPOE/assets/128280096/3d620726-5cc0-4891-8d6f-351651a078c6)
 Thereafter enter the releavant details for each ingredient. The unit of measurements and food groups are displayed in combo boxes. When you pick a food group, 
