@@ -78,7 +78,7 @@ and you can tick off the steps as you complete them.
 
 OPTION 3: SCALE RECIPE
 -------------------------------------------------
-Select the recipe you wish to scale from the combo box.  Choose how you want to scale the recipe: 'half', 'double' or 'triple' depending on how they want to scale the recipe. Once the recipe has been scaled, the scaled recipe will be displayed.
+Select the recipe you wish to scale from the combo box.  Choose how you want to scale the recipe: 'half', 'double' or 'triple'. Once the recipe has been scaled, the scaled recipe will be displayed.
 
 The example image below shows scaling a recipe by 'half':
 ![image](https://github.com/ST10268917/RecipeAppPOE/assets/128280096/9c57eb92-07c8-4958-ac7e-f9b203317110)
