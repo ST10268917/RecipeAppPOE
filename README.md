@@ -78,21 +78,25 @@ and you can tick off the steps as you complete them.
 
 OPTION 3: SCALE RECIPE
 -------------------------------------------------
-Once the user has entered a recipe and they click on option 3, they will be shown a list of all the recipes and will be asked which recipe they want to scale.  The user must enter 'half', 'double' or 'triple' depending on how they want to scale the recipe. Once the recipe has been scaled, the scaled recipe will be displayed to the user.
+Select the recipe you wish to scale from the combo box.  Choose how you want to scale the recipe: 'half', 'double' or 'triple' depending on how they want to scale the recipe. Once the recipe has been scaled, the scaled recipe will be displayed.
 
 The example image below shows scaling a recipe by 'half':
-![image](https://github.com/VCDN-2024/prog6221-part-1-ST10268917/assets/128280096/bdf0577a-c222-482e-874e-4381c07f19fb)
+![image](https://github.com/ST10268917/RecipeAppPOE/assets/128280096/9c57eb92-07c8-4958-ac7e-f9b203317110)
+
+The example image below shows scaling a recipe by 'double':
+![image](https://github.com/ST10268917/RecipeAppPOE/assets/128280096/02a04cfc-e82c-431e-af56-4aaed3dcc045)
+
+The example image below shows scaling a recipe by 'triple':
+![image](https://github.com/ST10268917/RecipeAppPOE/assets/128280096/d70f0e63-0714-48e3-b5eb-0e699cf03aed)
+
+NOTE: Units of measurement are changed accordingly when scaling. In the example shown below, 8 tablespoons of milk when doubled, becomes 16 tablespoons of milk. The system does the conversion and changes this to 1 cup of milk beacuse 16 tablespoons = 1 cup. 
+![image](https://github.com/ST10268917/RecipeAppPOE/assets/128280096/51fde7ed-95da-430a-b53a-b535e848eb0e)
 
 
-NOTE: Units of measurement are changed accordingly when scaling. In the example shown below, 8 tablespoons of milk when doubled, becomes 16 tablespoons of milk. The system does the conversion and changes this to 1 cup of milk as 16 tablespoons = 1 cup. 
-![alt text](image-9.png)
-
--------------------------------------------------
 OPTION 4: RESET QUANTITIES TO ORIGINAL VALUES
 -------------------------------------------------
-The quantities reset to their original values. Once reset, the recipe will be displayed back to the user.
-![image](https://github.com/VCDN-2024/prog6221-part-1-ST10268917/assets/128280096/f995b13e-2af8-401e-948d-35921476b5b1)
-
+Select the recipe to reset. The quantities reset to their original values. Once reset, the recipe will be displayed.
+![image](https://github.com/ST10268917/RecipeAppPOE/assets/128280096/bfbbee72-e479-43b4-9177-ebed3e4c15dc)
 
 
 OPTION 5: CLEAR RECIPE
@@ -120,8 +124,12 @@ Select a food group and the app will filter through all the recipes and display 
 
 OPTION 9: SEARCH BY MAXIMUM CALORIES
 -------------------------------------------------
+![image](https://github.com/ST10268917/RecipeAppPOE/assets/128280096/e0d41825-82df-4687-8a1d-917fbae14bd5)
+
 ![image](https://github.com/ST10268917/RecipeAppPOE/assets/128280096/a66f72fc-06c6-4cdb-b3cf-c4cb2f159a65)
 Enter a maximum number of caloies and the app will filter through all the recipes and display the names of the recipes that have calories less than or equal to that amount.
+
+Note: For all the search functionalities above, if a recipe with that criteria is not found, a pop-up will show to inform.
 
 LINK TO GITHUB REPOSITORY:
 -------------------------------------------------
