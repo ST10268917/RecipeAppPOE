@@ -55,7 +55,7 @@ OPTION 1: ENTER A RECIPE
 
 ![image](https://github.com/ST10268917/RecipeAppPOE/assets/128280096/ac56c424-111a-4b60-beec-9c044eae44d3)
 
-Start by entering a the name, the number of ingredients and the number of steps for the recipe. If invalid inputs are entered, you will get a pop-up message informing you.
+Start by entering the name, the number of ingredients and the number of steps for the recipe. If invalid inputs are entered, you will get a pop-up message informing you.
 
 ![image](https://github.com/ST10268917/RecipeAppPOE/assets/128280096/3d620726-5cc0-4891-8d6f-351651a078c6)
 Thereafter enter the releavant details for each ingredient. The unit of measurements and food groups are displayed in combo boxes. When you pick a food group, 
@@ -78,7 +78,7 @@ and you can tick off the steps as you complete them.
 
 OPTION 3: SCALE RECIPE
 -------------------------------------------------
-Select the recipe you wish to scale from the combo box.  Choose how you want to scale the recipe: 'half', 'double' or 'triple' depending on how they want to scale the recipe. Once the recipe has been scaled, the scaled recipe will be displayed.
+Select the recipe you wish to scale from the combo box.  Choose how you want to scale the recipe: 'half', 'double' or 'triple'. Once the recipe has been scaled, the scaled recipe will be displayed.
 
 The example image below shows scaling a recipe by 'half':
 ![image](https://github.com/ST10268917/RecipeAppPOE/assets/128280096/9c57eb92-07c8-4958-ac7e-f9b203317110)
@@ -109,12 +109,12 @@ you want to clear the recipe and the recipe is only cleared if you click on 'Yes
 
 OPTION 6: EXIT APPLICATION
 -------------------------------------------------
-![alt text](image-5.png)
 You can exit the app by clicking on this button.
 
 OPTION 7: SEARCH BY INGREDIENT
 -------------------------------------------------
 ![image](https://github.com/ST10268917/RecipeAppPOE/assets/128280096/71f60310-f078-46ce-9e16-36d4ce9d95c9)
+
 Enter the name of an ingredient and the app will filter through all the recipes and display the names of the recipes that have that ingredient.
 
 OPTION 8: SEARCH BY FOOD GROUP
@@ -133,9 +133,8 @@ Note: For all the search functionalities above, if a recipe with that criteria i
 
 LINK TO GITHUB REPOSITORY:
 -------------------------------------------------
-https://github.com/VCDN-2024/prog6221-part-1-ST10268917.git
+https://github.com/ST10268917/RecipeAppPOE.git; 
 
-Note: I used the same repository from part 1 and part 2 for my part 3 submission
 
 
 
