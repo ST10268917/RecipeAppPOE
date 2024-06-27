@@ -39,7 +39,7 @@ namespace RecipeApp
         public List<double> IngredientCalories = new List<double>();
         public List<double> IngredientCaloriesScaled = new List<double>();
         public List<string> recipeUnitsToDisplay = new List<string>();
-        public List<string> Steps = new List<string>();
+        public List<Step> Steps = new List<Step>();
         public List<string> FoodGroups = new List<string>();
 
         public Recipe()
@@ -114,4 +114,11 @@ namespace RecipeApp
         }
 
     }
+
+    public class Step
+    {
+        public string Description { get; set; }
+        public bool IsCompleted { get; set; } = false;
+    }
+
 }

@@ -40,7 +40,8 @@ namespace RecipeApp
 
             // Assuming all validations pass, proceed to update the recipe
             Recipe recipe = RecipeManager.allRecipes[recipeName];
-            recipe.Steps.Add(descriptionTB.Text);
+            recipe.Steps.Add(new Step { Description = descriptionTB.Text, IsCompleted = false });
+
             StepSubmitted?.Invoke();
             this.Close();
         }

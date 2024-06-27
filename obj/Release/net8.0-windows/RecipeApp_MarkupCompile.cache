@@ -10,11 +10,11 @@ none
 false
 TRACE;RELEASE;NET;NET8_0;NETCOREAPP
 C:\Users\Hamza\source\repos\RecipeAppPOE\RecipeApp\App.xaml
-4-1427413084
+81063387888
 
-102055783962
+14-388304578
 198915248976
-EnterRecipe.xaml;IngredientDetails.xaml;MainWindow.xaml;StepsDetails.xaml;
+ClearRecipe.xaml;Display.xaml;EnterRecipe.xaml;IngredientDetails.xaml;MainWindow.xaml;resetRecipe.xaml;Scale.xaml;StepsDetails.xaml;
 
 True
 

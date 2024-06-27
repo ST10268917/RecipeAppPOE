@@ -58,5 +58,23 @@ namespace RecipeApp
             resetRecipe reset = new resetRecipe();
             reset.Show();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Search searchByIngredient = new Search();
+            searchByIngredient.Show();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            SearchByFoodGroup searchByFoodGroup = new SearchByFoodGroup();
+            searchByFoodGroup.Show();
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            SearchByMaxCalories searchByMaxCalories = new SearchByMaxCalories();
+            searchByMaxCalories.Show();
+        }
     }
 }

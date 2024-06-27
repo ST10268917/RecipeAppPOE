@@ -10,7 +10,7 @@
         <Label x:Name="titleLabel" Content="Reset Recipe" HorizontalAlignment="Left" Margin="66,24,0,0" VerticalAlignment="Top" FontSize="22" FontWeight="Bold" FontFamily="Segoe UI Black"/>
         <ComboBox x:Name="recipesCB" HorizontalAlignment="Left" Margin="79,109,0,0" VerticalAlignment="Top" Width="484"/>
         <Label Content="Which recipe would you like to reset?" HorizontalAlignment="Left" Margin="71,83,0,0" VerticalAlignment="Top"/>
-        <TextBlock x:Name="displayTB" HorizontalAlignment="Left" Margin="80,223,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="281" Width="486" Background="{DynamicResource {x:Static SystemColors.ScrollBarBrushKey}}"/>
+        <TextBlock x:Name="displayTB" HorizontalAlignment="Left" Margin="80,223,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="281" Width="486" Background="{DynamicResource {x:Static SystemColors.ScrollBarBrushKey}}"/>
         <Button x:Name="resetButton" Content="Reset" HorizontalAlignment="Left" Margin="80,149,0,0" VerticalAlignment="Top" Width="51" Click="resetButton_Click"/>
 
     </Grid>

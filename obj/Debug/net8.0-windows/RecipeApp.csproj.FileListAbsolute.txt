@@ -57,3 +57,9 @@ C:\Users\Hamza\source\repos\RecipeAppPOE\RecipeApp\obj\Debug\net8.0-windows\Scal
 C:\Users\Hamza\source\repos\RecipeAppPOE\RecipeApp\obj\Debug\net8.0-windows\Scale.baml
 C:\Users\Hamza\source\repos\RecipeAppPOE\RecipeApp\obj\Debug\net8.0-windows\resetRecipe.g.cs
 C:\Users\Hamza\source\repos\RecipeAppPOE\RecipeApp\obj\Debug\net8.0-windows\resetRecipe.baml
+C:\Users\Hamza\source\repos\RecipeAppPOE\RecipeApp\obj\Debug\net8.0-windows\Search.g.cs
+C:\Users\Hamza\source\repos\RecipeAppPOE\RecipeApp\obj\Debug\net8.0-windows\Search.baml
+C:\Users\Hamza\source\repos\RecipeAppPOE\RecipeApp\obj\Debug\net8.0-windows\SearchByFoodGroup.g.cs
+C:\Users\Hamza\source\repos\RecipeAppPOE\RecipeApp\obj\Debug\net8.0-windows\SearchByFoodGroup.baml
+C:\Users\Hamza\source\repos\RecipeAppPOE\RecipeApp\obj\Debug\net8.0-windows\SearchByMaxCalories.g.cs
+C:\Users\Hamza\source\repos\RecipeAppPOE\RecipeApp\obj\Debug\net8.0-windows\SearchByMaxCalories.baml

@@ -11,16 +11,28 @@
             <ImageBrush ImageSource="https://t4.ftcdn.net/jpg/08/45/28/33/360_F_845283329_IEUG9XjcfK1f6cN4DPNaQDGUoQRR4b3h.jpg"></ImageBrush>
         </Grid.Background>
         <Label x:Name="titleLabel" Content="Welcome to the Recipe App" HorizontalAlignment="Left" Margin="41,80,0,0" VerticalAlignment="Top" FontSize="22" FontWeight="Bold" FontFamily="Segoe UI Black"/>
-        <Button x:Name="enterRecipeButton" Content="Enter a recipe" HorizontalAlignment="Left" Margin="50,156,0,0" VerticalAlignment="Top" Width="99" Background="#FFFF4000" Click="enterRecipeButton_Click"/>
-        <Button x:Name="displayRecipeButton" Content="Display Recipe" HorizontalAlignment="Left" Margin="100,191,0,0" VerticalAlignment="Top" Background="#FFDFD541" Click="displayRecipeButton_Click"/>
-        <Button x:Name="scaleRecipeButton" Content="Scale Recipe" HorizontalAlignment="Left" Margin="140,228,0,0" VerticalAlignment="Top" Background="#FF1AA461" Click="scaleRecipeButton_Click"/>
-        <Button x:Name="resetButton" Content="Reset Quantities" HorizontalAlignment="Left" Margin="175,264,0,0" VerticalAlignment="Top" Background="#FFFFA900" Click="resetButton_Click"/>
-        <Button x:Name="clearButton" Content="Clear Recipe" HorizontalAlignment="Left" Margin="244,297,0,0" VerticalAlignment="Top" Background="#FF709EF6" Click="clearButton_Click"/>
-        <Button x:Name="exitButton" Content="Exit Application" HorizontalAlignment="Left" Margin="290,331,0,0" VerticalAlignment="Top" Background="#FFFF0086" Click="exitButton_Click">
+        <Button x:Name="enterRecipeButton" Content="Enter a recipe" HorizontalAlignment="Left" Margin="50,156,0,0" VerticalAlignment="Top" Width="125" Background="#FFFF4000" Click="enterRecipeButton_Click"/>
+        <Button x:Name="displayRecipeButton" Content="Display Recipe" HorizontalAlignment="Left" Margin="227,157,0,0" VerticalAlignment="Top" Background="#FFDFD541" Click="displayRecipeButton_Click" Width="123"/>
+        <Button x:Name="scaleRecipeButton" Content="Scale Recipe" HorizontalAlignment="Left" Margin="49,206,0,0" VerticalAlignment="Top" Background="#FF1AA461" Click="scaleRecipeButton_Click" Width="124"/>
+        <Button x:Name="resetButton" Content="Reset Quantities" HorizontalAlignment="Left" Margin="226,0,0,0" VerticalAlignment="Center" Background="#FFFFA900" Click="resetButton_Click" RenderTransformOrigin="0.5,0.5" Width="128">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.235"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="clearButton" Content="Clear Recipe" HorizontalAlignment="Left" Margin="52,253,0,0" VerticalAlignment="Top" Background="#FF709EF6" Click="clearButton_Click" Width="122"/>
+        <Button x:Name="exitButton" Content="Exit Application" HorizontalAlignment="Left" Margin="229,253,0,0" VerticalAlignment="Top" Background="#FFFF0086" Click="exitButton_Click" Width="126">
             <Button.Style>
                 <Style/>
             </Button.Style>
         </Button>
+        <Button Content="Search by ingredient" HorizontalAlignment="Left" Margin="53,300,0,0" VerticalAlignment="Top" Width="126" Click="Button_Click"/>
+        <Button Content="Search by food group" HorizontalAlignment="Left" Margin="231,301,0,0" VerticalAlignment="Top" Width="126" Click="Button_Click_1"/>
+        <Button Content="Search by maximum calories" HorizontalAlignment="Left" Margin="108,346,0,0" VerticalAlignment="Top" Width="172" Click="Button_Click_2"/>
 
     </Grid>
 </Window>

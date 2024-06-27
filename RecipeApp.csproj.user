@@ -25,6 +25,15 @@
     <Compile Update="Scale.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Search.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="SearchByFoodGroup.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="SearchByMaxCalories.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="StepsDetails.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -49,6 +58,15 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Scale.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Search.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="SearchByFoodGroup.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="SearchByMaxCalories.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="StepsDetails.xaml">

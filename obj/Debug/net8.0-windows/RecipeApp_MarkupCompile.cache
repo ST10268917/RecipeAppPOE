@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\Hamza\source\repos\RecipeAppPOE\RecipeApp\App.xaml
-81063387888
+11158404864
 
-14-474703750
+17-2121103770
 198915248976
-ClearRecipe.xaml;Display.xaml;EnterRecipe.xaml;IngredientDetails.xaml;MainWindow.xaml;resetRecipe.xaml;Scale.xaml;StepsDetails.xaml;
+ClearRecipe.xaml;Display.xaml;EnterRecipe.xaml;IngredientDetails.xaml;MainWindow.xaml;resetRecipe.xaml;Scale.xaml;Search.xaml;SearchByFoodGroup.xaml;SearchByMaxCalories.xaml;StepsDetails.xaml;
 
 False
 

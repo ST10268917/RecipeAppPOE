@@ -1,0 +1,17 @@
+﻿<Window x:Class="RecipeApp.SearchByFoodGroup"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RecipeApp"
+        mc:Ignorable="d"
+        Title="SearchByFoodGroup" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="titleLabel" Content="Search recipe by food group" HorizontalAlignment="Left" Margin="66,24,0,0" VerticalAlignment="Top" FontSize="22" FontWeight="Bold" FontFamily="Segoe UI Black"/>
+        <Label Content="Choose a food group that must be in the recipe:" HorizontalAlignment="Left" Margin="73,81,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="searchBtn" Content="Search" HorizontalAlignment="Left" Height="31" Margin="81,312,0,0" VerticalAlignment="Top" Width="77" Background="#FF168CAC" Click="searchBtn_Click"/>
+        <ListBox x:Name="searchResultsLB" Margin="77,135,422,133"/>
+        <ComboBox x:Name="foodGroupCB" HorizontalAlignment="Left" Margin="79,105,0,0" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>

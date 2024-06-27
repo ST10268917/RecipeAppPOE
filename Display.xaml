@@ -5,12 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RecipeApp"
         mc:Ignorable="d"
-        Title="Display" Height="496" Width="800">
-    <Grid>
-        <Label x:Name="titleLabel" Content="Display Recipe" HorizontalAlignment="Left" Margin="66,24,0,0" VerticalAlignment="Top" FontSize="22" FontWeight="Bold" FontFamily="Segoe UI Black"/>
-        <ComboBox x:Name="recipesCB" HorizontalAlignment="Left" Margin="79,109,0,0" VerticalAlignment="Top" Width="448" SelectionChanged="recipesCB_SelectionChanged"/>
-        <Label Content="Which recipe would you like to display?" HorizontalAlignment="Left" Margin="71,83,0,0" VerticalAlignment="Top"/>
-        <TextBlock x:Name="displayTB" HorizontalAlignment="Left" Margin="87,166,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="268" Width="439" Background="{DynamicResource {x:Static SystemColors.ScrollBarBrushKey}}"/>
+        Title="Display" Height="672" Width="901">
+    <Grid Margin="0,320,213,41">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="339*"/>
+            <ColumnDefinition Width="428*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="titleLabel" Content="Display Recipe" HorizontalAlignment="Left" Margin="122,-286,0,0" VerticalAlignment="Top" FontSize="22" FontWeight="Bold" FontFamily="Segoe UI Black"/>
+        <ComboBox x:Name="recipesCB" HorizontalAlignment="Left" Margin="135,-201,0,0" VerticalAlignment="Top" Width="448" SelectionChanged="recipesCB_SelectionChanged" Grid.ColumnSpan="2"/>
+        <Label Content="Which recipe would you like to display?" HorizontalAlignment="Left" Margin="127,-227,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <ScrollViewer Grid.ColumnSpan="2" Margin="140,-161,98,187">
+            <TextBlock x:Name="displayTB"  TextWrapping="Wrap" Height="272" Width="456" Background="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}" Grid.ColumnSpan="2"/>
+        </ScrollViewer>
+        <ListView x:Name="stepsListView" Margin="136,109,97,31" Grid.ColumnSpan="2" Foreground="{x:Null}">
+            <ListView.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ActiveBorderColorKey}}"/>
+            </ListView.Background>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <CheckBox Content="{Binding Description}" IsChecked="{Binding IsCompleted}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+
 
     </Grid>
 </Window>
